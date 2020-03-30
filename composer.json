@@ -1,0 +1,17 @@
+{
+    "name": "wedev/assignment",
+    "description": "ToDo app",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sajid Khan",
+            "email": "Sajidk25@gmail.com"
+        }
+    ],
+    "require": {
+        
+    },
+    "autoload": {
+        "psr-4": {"ToDo\\" : "src/"}
+    }
+}
