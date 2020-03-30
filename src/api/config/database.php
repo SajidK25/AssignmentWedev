@@ -1,14 +1,16 @@
 <?php
+namespace ToDo\api\config;
+use PDO;
+use PDOException;
+
 class Database{
 
-    // specify your own database credentials
     private $host = "localhost";
     private $db_name = "todo";
     private $username = "root";
     private $password = "rafi420";
     public $conn;
 
-    // get the database connection
     public function getConnection(){
 
         $this->conn = null;
