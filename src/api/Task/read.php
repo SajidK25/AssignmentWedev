@@ -20,7 +20,7 @@ $num = $stmt->rowCount();
 if($num>0){
 
     $tasks_arr=array();
-    $tasks_arr["records"]=array();
+    //$tasks_arr["records"]=array();
 
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
         
@@ -32,7 +32,7 @@ if($num>0){
             "Status" => $Status
         );
 
-        array_push($tasks_arr["records"], $task_item);
+        array_push($tasks_arr, $task_item);
     }
 
     http_response_code(200);
