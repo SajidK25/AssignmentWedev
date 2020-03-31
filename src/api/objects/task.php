@@ -76,5 +76,20 @@ class Task{
         }
         return false;
     }
+
+    // search products
+function search($keywords){
+    
+    $query = "SELECT id,Task_name,Status FROM " . $this->table_name . " WHERE Status=? ORDER BY id DESC";
+  
+    $stmt = $this->conn->prepare($query);
+    $keywords=htmlspecialchars(strip_tags($keywords));
+    $stmt->bindParam(1, $keywords);
+  
+    // execute query
+    $stmt->execute();
+  
+    return $stmt;
+    }
 }
 ?>
