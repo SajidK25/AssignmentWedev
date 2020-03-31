@@ -22,10 +22,10 @@ $task = new Task($db);
 $data = json_decode(file_get_contents("php://input"));
 //  print_r($data);
 //         exit;
-if(!empty($data->Task_name) && !empty($data->Status))
+if(!empty($data->Task_name))
 {
     $task->task_name = $data->Task_name;
-    $task->status = $data->Status;
+    // $task->status = $data->Status;
 
     if($task->create()){
         http_response_code(201);
