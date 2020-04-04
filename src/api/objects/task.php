@@ -37,7 +37,6 @@ class Task{
         return false;
     }
 
-    // update the product
     function update(){
     
         // update query
@@ -64,7 +63,7 @@ class Task{
     
         return false;
     }
-// delete the product
+
     function delete(){
         $query = "DELETE FROM " . $this->table_name . " WHERE id = ?";
         $stmt = $this->conn->prepare($query);
@@ -77,8 +76,17 @@ class Task{
         return false;
     }
 
-    // search products
-function search($keywords){
+    function clear(){
+        $query = "DELETE FROM " . $this->table_name . " WHERE Status = 'completed'";
+        $stmt = $this->conn->prepare($query);
+    
+        if($stmt->execute()){
+            return true;
+        }
+        return false;
+    }
+
+    function search($keywords){
     
     $query = "SELECT id,Task_name,Status FROM " . $this->table_name . " WHERE Status=? ORDER BY id DESC";
   
