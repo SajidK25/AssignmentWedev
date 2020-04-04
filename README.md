@@ -1,7 +1,7 @@
 # AssignmentWedev
 <b>Description :</b> API backend for Todo app.
 
-<b>Platform:</b> PHP 7.2, MySQL 8.0 , Docker
+<b>Platform:</b> PHP 7.2, MySQL 8.0 , Composer, Docker
 
 <b>API Endpoint:</b>
 
