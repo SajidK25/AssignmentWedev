@@ -22,10 +22,10 @@ $task->id = $data->id;
   
 if($task->clear()){
     http_response_code(200);
-    echo json_encode(array("message" => "Task was deleted."));
+    echo json_encode(array("message" => "Completed Task(s) cleared."));
 }
 else{
     http_response_code(503);
-    echo json_encode(array("message" => "Unable to delete task."));
+    echo json_encode(array("message" => "Unable to clear task."));
 }
 ?>
