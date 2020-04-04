@@ -5,10 +5,10 @@ use PDOException;
 
 class Database{
 
-    private $host = "127.0.0.1";
+    private $host = "localhost";
     private $db_name = "todo";
     private $username = "root";
-    private $password = "test";
+    private $password = "rafi420";
     public $conn;
 
     public function getConnection(){
