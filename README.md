@@ -32,6 +32,8 @@
                     
         5. GET http://localhost/AssignmentWedev/src/api/Task/searchByStatus.php?status=active
         
+        6. GET http://localhost/AssignmentWedev/src/api/Task/clear.php
+        
 <b>Run in Docker :</b>
 
 <p> Just run following command in terminal from project root directory and use above endpoints accodingly. You must have installed Doceker and Docker-compose in your system </p>
